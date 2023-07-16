@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "788c25b6-1867-46c2-94f6-c2483721d35f",
+		"name": "Tasks",
+		"description": "Available Tasks on the API \"Monte seu PC API\" made to a side project of a recruitment process.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28552117-788c25b6-1867-46c2-94f6-c2483721d35f"
+	},
+	"item": [
+		{
+			"name": "GET Processing Units",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e54fdc88-1fe4-44f7-a700-62cb659685fa",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "f60ae31a-1134-4933-a0f6-e0fe8bc78b84",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pc_api/v1/get_processing_units",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pc_api",
+						"v1",
+						"get_processing_units"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Motherboards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7381005-a77b-49fa-b879-5b20ff05d8dc",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a1fd065d-51a5-4cf5-adcf-bb3741f49243",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pc_api/v1/get_motherboards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pc_api",
+						"v1",
+						"get_motherboards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET RAM Memories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c45e0773-32b9-4f8d-a8c3-0188d6675f62",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "5a07d618-ab3f-467e-8bd2-038eeb2759ce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pc_api/v1/get_ram_memories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pc_api",
+						"v1",
+						"get_ram_memories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Video Cards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8830737e-522d-4983-a8c3-15fcc57daf90",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "c1756a24-149b-4953-8a7b-eed0655bbdc2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pc_api/v1/get_video_cards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pc_api",
+						"v1",
+						"get_video_cards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Assembly PC Requests",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9e249d53-44d7-4849-869a-c47784a06658",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "edf6377f-e64c-42ba-be2e-b449ab86e027",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pc_api/v1/get_assembly_pc_requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pc_api",
+						"v1",
+						"get_assembly_pc_requests"
+					],
+					"query": [
+						{
+							"key": "customer_document",
+							"value": "123445678",
+							"description": "Document of the customer that made the assembly request",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "customer_name",
+							"value": "teste",
+							"description": "Name of the customer that made the assembly request",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Assembly PC Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has required fields - status, message, and data\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.status).to.exist.and.to.be.a('string');",
+							"    pm.expect(responseData.message).to.exist.and.to.be.a('string');",
+							"    pm.expect(responseData.data).to.exist.and.to.be.an('object');",
+							"});",
+							"",
+							"",
+							"pm.test(\"The id must be a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data.id).to.be.a('number');",
+							"    pm.expect(responseData.data.id).to.be.at.least(0, \"id must be a non-negative integer\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"customer_name is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data.customer_name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Customer document is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data.customer_document).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "6eb63fb1-2123-495b-860c-63794a2391fb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Data to request to assembly a PC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_document\": \"12345678\",\n    \"customer_name\":\"teste\",\n    \"personal_computer_attributes\": {\n        \"motherboard_id\": 1,\n        \"processing_unit_id\": 2,\n        \"video_card_id\": 1,\n        \"personal_computer_ram_memories_attributes\": [\n            { \"ram_memory_id\": 1 },\n            { \"ram_memory_id\": 2 }\n        ]\n    }\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pc_api/v1/post_assembly_pc_request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pc_api",
+						"v1",
+						"post_assembly_pc_request"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
