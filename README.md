@@ -31,4 +31,6 @@ rails s
 
 # Documentação
 
-  Documentação e testes de conexão básicos feito no Postman 
+### Documentação e testes de conexão básicos feito no Postman:
+
+[Postman API Documentation](https://www.postman.com/brenna-menezes/workspace/brenna-public-workspace/collection/28552117-6468af02-51d7-46b6-a829-0e647d983bfc?action=share&creator=28552117)
