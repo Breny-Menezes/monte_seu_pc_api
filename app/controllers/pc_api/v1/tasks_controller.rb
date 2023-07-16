@@ -47,7 +47,6 @@ class PcApi::V1::TasksController < ApplicationController
     else
       render json: {status: 'ERROR', message:'Request Failed. Check the errors.', data: assembly_pc_request.errors.messages},status: :unprocessable_entity
     end
-    byebug
   end
 
   private
