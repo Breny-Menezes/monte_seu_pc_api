@@ -2,27 +2,16 @@
 
 API feita para desafio proposto pela Coreplan.
 
+Para preparar o ambiente:
 
+Bundle Install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Configurar DB:
 
-Things you may want to cover:
+rails db:create
+rails db:migrate
+rails db:seed
 
-* Ruby version
+Testes automáticos em RSPEC, para checar:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rspec spec
