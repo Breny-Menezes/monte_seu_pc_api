@@ -1,9 +1,5 @@
 class PcApi::V1::TasksController < ApplicationController
 
-  def index
-    render json: {}, status: 200
-  end
-
   def get_processing_units
     @processing_units = ProcessingUnit.all
 
